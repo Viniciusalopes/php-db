@@ -1,0 +1,7 @@
+{
+    "comment": "dbconfig",
+    "host": "http://localhost",
+    "database": "database-name",
+    "user": "username",
+    "password": "senha-da-nasa"
+}
