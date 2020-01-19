@@ -23,10 +23,17 @@ Manipulação de bancos de dados com PHP
 
   Após a configuração da conexão, a solução deverá obter a estrutura de tabelas do banco e gerar ___automaGicamente___ os arquivos __.json__ com a estrutura de dados, dispensando a necessidade de digitar strings de SQL, que serão construídas a partir da base de informações dos arquivos ___.json___.
 
-
   Numa segunda etapa, pretendo transformar a aplicação em uma api para consumir dados desses bancos.
+
+## Reinventando a roda
+  Pode até ser que já exista uma solução (ou conjunto de) que atenda à essas necessidades e eu nem saiba mas, reinventar a roda também é uma boa prática para o aprendizado.
   
   Idéia anotada, mão na massa!
 
+---
+
+### Links
+
 [GitHub Repository](https://github.com/Viniciusalopes/php-db)
+
 [GitHub Project](https://github.com/users/Viniciusalopes/projects/4)
