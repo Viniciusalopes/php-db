@@ -15,9 +15,14 @@ Goal    : HTML page for development test
     <body>
         <?php
         require_once dirname(__FILE__) . '/bin/session.php';
-        clear_session();
-        require_once dirname(__FILE__) . '/model/DbMySql.php';
-        $db = new DbMySql('./cfg/dbconfig.json');
+        //clear_session();
+        require_once dirname(__FILE__) . '/model/Usuario.php';
+
+        $Usuario = new DaoUsuario();
+        $_SESSION['usuarios1'] = $Usuario->getAll();
+        $_SESSION['usuarios2'] = $Usuario->getEquals([['usuario_id', 2]]);
+        $_SESSION['usuarios3'] = $Usuario->getLikeAs([['usuario_nome', 'Vin']]);
+
         print_session();
         ?>
     </body>

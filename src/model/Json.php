@@ -18,7 +18,7 @@ class Json {
 
         return (json_last_error() == JSON_ERROR_NONE) ?
                 $results :
-                (object) ['erro' => 'Erro ao decodificar o arquivo <' . $url . '>'];
+                (object) ['exc' => 'Error on decode file the file <' . $url . '>'];
     }
 
     public static function json_encode($url, $data) {

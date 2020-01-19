@@ -10,7 +10,6 @@
  */
 require_once dirname(__DIR__) . '/bin/session.php';
 require_once dirname(__DIR__) . '/model/Json.php';
-require_once dirname(__DIR__) . '/model/DbMySql.php';
 
 abstract class Db {
 
@@ -36,6 +35,10 @@ abstract class Db {
     private static function save_on_session($dbconfig) {
         $_SESSION['connection'] = (object) ['dbconfig' => $dbconfig];
         unset($_SESSION['connection']->dbconfig->password);
+    }
+
+    static function getType() {
+        return self::$type;
     }
 
 }
