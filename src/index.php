@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+---------------------------------------------------------------------------------------
+License : MIT - Copyright 2020 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+Date    : 2020-01-19
+Project : php-db
+Goal    : HTML page for development test
+---------------------------------------------------------------------------------------
 -->
 <html>
     <head>
@@ -11,7 +14,11 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+        require_once dirname(__FILE__) . '/bin/session.php';
+        clear_session();
+        require_once dirname(__FILE__) . '/model/DbMySql.php';
+        $db = new DbMySql('./cfg/dbconfig.json');
+        print_session();
         ?>
     </body>
 </html>

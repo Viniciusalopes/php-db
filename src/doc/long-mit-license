@@ -1,32 +1,32 @@
 <#if licenseFirst??>
 ${licenseFirst}
 </#if>
-${licensePrefix}A licença MIT
+${licensePrefix}The MIT License
 ${licensePrefix?replace(" +$", "", "r")}
-${licensePrefix}Copyright ${date?date?string("yyyy")} Viniciusalopes Tecnologia <suporte@viniciusalopes.com.br>.
+${licensePrefix}Copyright ${date?date?string("yyyy")} ${project.organization!user}.
 ${licensePrefix?replace(" +$", "", "r")}
-${licensePrefix}É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
-${licensePrefix}deste software e dos arquivos de documentação associados (o "Software"), para
-${licensePrefix}negociar o Software sem restrições, incluindo, sem limitação, os direitos de uso,
-${licensePrefix}cópia, modificação e fusão, publicar, distribuir, sublicenciar e/ou vender cópias
-${licensePrefix}do Software, e permitir que as pessoas a quem o Software é fornecido o façam,
-${licensePrefix}sujeitas às seguintes condições:
+${licensePrefix}Permission is hereby granted, free of charge, to any person obtaining a copy
+${licensePrefix}of this software and associated documentation files (the "Software"), to deal
+${licensePrefix}in the Software without restriction, including without limitation the rights
+${licensePrefix}to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+${licensePrefix}copies of the Software, and to permit persons to whom the Software is
+${licensePrefix}furnished to do so, subject to the following conditions:
 ${licensePrefix?replace(" +$", "", "r")}
-${licensePrefix}O aviso de copyright acima e este aviso de permissão devem ser incluídos em
-${licensePrefix}todas as cópias ou partes substanciais do Software.
+${licensePrefix}The above copyright notice and this permission notice shall be included in
+${licensePrefix}all copies or substantial portions of the Software.
 ${licensePrefix?replace(" +$", "", "r")}
-${licensePrefix}O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM NENHUM TIPO DE GARANTIA,
-${licensePrefix}EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
-${licensePrefix}ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA, OS AUTORES
-${licensePrefix}OU PROPRIETÁRIOS DE DIREITOS DE AUTOR PODERÃO SER RESPONSABILIZADOS POR QUAISQUER
-${licensePrefix}REIVINDICAÇÕES, DANOS OU OUTRAS RESPONSABILIDADES, QUER EM AÇÃO DE CONTRATO,
-${licensePrefix}DELITO OU DE OUTRA FORMA, DECORRENTES DE, OU EM CONEXÃO COM O SOFTWARE OU O USO
-${licensePrefix}OU OUTRAS NEGOCIAÇÕES NO PROGRAMAS.
+${licensePrefix}THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+${licensePrefix}IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+${licensePrefix}FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+${licensePrefix}AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+${licensePrefix}LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+${licensePrefix}OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+${licensePrefix}THE SOFTWARE.
 ${licensePrefix}------------------------------------------------------------------------------------------
-${licensePrefix}Projeto   : php-db
-${licensePrefix}Criado em : ${date?date?string("dd/MM/yyyy")}
-${licensePrefix}Autor     : Viniciusalopes (Vovolinux) <suporte@viniciusalopes.com.br>
-${licensePrefix}Finalidade: 
+${licensePrefix}Project : php-db
+${licensePrefix}Date    : ${date?date?string("yyyy-MM-dd")}
+${licensePrefix}Author  : Viniciusalopes (Vovolinux) <suporte@viniciusalopes.com.br>
+${licensePrefix}Goal    : 
 ${licensePrefix}------------------------------------------------------------------------------------------
 <#if licenseLast??>
 ${licenseLast}

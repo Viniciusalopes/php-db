@@ -1,7 +1,10 @@
 {
-    "comment": "dbconfig",
-    "host": "http://localhost",
+    "comment": "dbconfig - config file for database connection",
+    "author": "Vovolinux",
+    "date": "2020-01-19",
+    "type": "mysql",
+    "host": "http://localhost or 111.222.333.444",
     "database": "database-name",
     "user": "username",
-    "password": "senha-da-nasa"
+    "password": "NASA-password"
 }
